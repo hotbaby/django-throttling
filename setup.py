@@ -6,15 +6,15 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="django-throttling-py",
-    version="0.0.1",
-    author="Example Author",
-    author_email="author@example.com",
-    description="A small example package",
+    version="0.1.0",
+    author="Meng yangyang",
+    author_email="mengyy_linux@163.com",
+    description="Django throttling",
     long_description=long_description,
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/hotbaby/django-throttling-py",
     license="MIT",
     packages=setuptools.find_packages(),
-    install_requires=[],
+    install_requires=["django>=1.8.18"],
     classifiers=[
         "Programming Language :: Python :: 2",
         "License :: OSI Approved :: MIT License",
