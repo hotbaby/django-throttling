@@ -6,7 +6,7 @@ from .throttling import AnonRateThrottle
 from .settings import THROTTLE_TRIGGER_RESPONSE
 
 
-class ThrottleMiddleware(object):
+class AnonThrottleMiddleware(object):
     def process_request(self, request):
         if not AnonRateThrottle().allow_request(request, None):
             return JsonResponse(THROTTLE_TRIGGER_RESPONSE)
